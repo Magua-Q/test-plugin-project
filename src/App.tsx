@@ -7,7 +7,8 @@ import DynamicComponentLoader from './DynamicComponentLoader'
 function App() {
   const [count, setCount] = useState(0)
   const [pluginId, setPluginId] = useState('default')
-
+  const [test, setTest] = useState('')
+  
   return (
     <>
       <div>
@@ -49,6 +50,10 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <button onClick={() => setTest('测试单测')}>
+        测试单测
+      </button>
+      <p>{ test }</p>
     </>
   )
 }
